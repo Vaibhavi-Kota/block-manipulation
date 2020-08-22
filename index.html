@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Block Manipulation</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="menu">
+		<div class="block">
+		<h3 class="heading">Position Y</h3>
+		<div class="wraper vertical">
+			
+			<input type="range" id="ypos" min="0" max="600" value="0">
+			<label for="pos-y">
+				<span>0</span>
+				<span>600</span>
+			</label>
+		</div>
+	</div>
+		<div class="block">
+			<h3 class="heading">Position X</h3>
+			<div class="wraper">
+				<label for="pos-x">0</label>
+				<input type="range" id="pos-x" min="0" max="800" value="0">
+				<label for="pos-x">800</label>
+			</div>
+		</div>
+		<div class="block">
+			<h3 class="heading">Size</h3>
+			<div class="wraper">
+				<label for="size">0</label>
+				<input type="range" id="size" min="0" max="2" step="0.1" value="1">
+				<label for="size">2</label>
+			</div>
+		</div>
+		<div class="block">
+			<h3 class="heading">Opacity</h3>
+			<div class="wraper">
+				<label for="opac">0</label>
+				<input type="range" id="opac" min="0" max="1" step="0.01" value="1">
+				<label for="opac">1</label>
+			</div>
+		</div>
+		<div class="block">
+			<h3 class="heading">Shape Type</h3>
+			<div class="wraper">
+				<select id="shape">
+					<option value="1">Square</option>
+					<option value="2">Circle</option>
+					<option value="3">Rhombus</option>
+				</select>
+				<button class="okbtn">OK</button>
+			</div>
+		</div>
+		<div class="block">
+			<h3 class="heading">HEX</h3>
+			<div class="wraper">
+				<label for="hex-code">#</label>
+				<input type="text" id="hex-code">
+			</div>
+		</div>
+		<div class="block">
+			<h3 class="heading">rgba</h3>
+			<div class="wraper">
+				<input type="range" min="0" max="255" value="255" id="rgba-r"><label for="rgba-r">r</label>
+				<input type="range" min="0" max="255" value="0" id="rgba-g"><label for="rgba-g">g</label>
+				<input type="range" min="0" max="255" value="0" id="rgba-b"><label for="rgba-b">b</label>
+				<input type="range" min="0" max="1" value="1" step="0.1" id="rgba-a"><label for="rgba-a">a</label>
+			</div>
+		</div>
+	</div>
+	<div class="dabba1">	
+		<div class="dabba"></div>
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
